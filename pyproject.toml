@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecpro"
+version = "1.0.0"
+description = "ECPRO 電商博士 Python SDK — 查台灣網站的開店平台、技術、廣告、競品與名單"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["ecommerce", "taiwan", "ecpro", "builtwith"]
+authors = [{ name = "ECPRO 電商博士" }]
+urls = { Homepage = "https://ecpro.tw" }
+
+[tool.setuptools]
+py-modules = ["ecpro"]
