@@ -1,3 +1,7 @@
+**[中文](#中文) | [English](#english)**
+
+## 中文
+
 # ECPRO Python SDK
 
 查台灣網站的開店平台、技術、廣告、競品與名單。資料來源 [ECPRO 電商博士](https://ecpro.tw)。零相依（只用標準庫）。
@@ -16,3 +20,24 @@ ec.stats()                                     # 資料庫總覽
 CLI：`python ecpro.py pinkoi.com`
 
 發布：`cd ecpro-py && python -m build && twine upload dist/*`
+
+## English
+
+# ECPRO Python SDK
+
+Look up the e-commerce platform, technologies, advertising, competitors, and prospect lists of Taiwanese websites. Data source: [ECPRO 電商博士](https://ecpro.tw). Zero dependencies (standard library only).
+
+```python
+from ecpro import ECPRO
+ec = ECPRO()
+
+ec.detect("pinkoi.com")                       # platform/technology/ad pixels
+ec.site("pinkoi.com")                          # traffic estimate/score/tax ID
+ec.competitors("pinkoi.com")                   # industry competitors
+ec.prospect(platform="SHOPLINE", limit=50)     # prospect list
+ec.stats()                                     # database overview
+```
+
+CLI: `python ecpro.py pinkoi.com`
+
+Publish: `cd ecpro-py && python -m build && twine upload dist/*`
